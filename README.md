@@ -1,4 +1,2 @@
-# Alura---Projeto-Alura+
-Um projeto que fiz enquanto treinava algumas habilidades referentes à marcação de conteúdos, disposição e organização de classes no CSS, propriedades CSS e flexbox.
+<h1 align: center> Meu Portifólio da Alura </h1>
 
-## Isto é um teste...
