@@ -1,0 +1,260 @@
+:root {
+    --darkblue: #00030C;
+    --gray: #F9F9F9;
+    --darkgray: #C0C0C0;
+    --skyblue: #167BF7;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(_assets/_font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    background-color: var(--darkblue);
+    margin: 0 6.25vh;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-family: Inter, sans-serif;
+    color: white;
+    font-weight: 700;
+}
+
+p,figcaption {
+    font-size: 1.5rem;
+    color: var(--gray);
+    font-family: Inter, sans-serif;
+    font-weight: 100;
+}
+
+/*Botões ====================================================================*/
+.button {
+    border-radius: 8px;
+    height: 72px;
+    margin-top: 16px;
+    background-color: var(--skyblue);
+    font-size: 1.6rem;
+    color: white;
+    border-color: var(--skyblue);
+    border-style: solid;
+}
+
+.button_1 {
+    background-color: var(--skyblue);
+}
+
+.button_2 {
+    background-color: transparent;
+    border-color: white;
+}
+/*Botões ====================================================================*/
+
+/*Header ====================================================================*/
+.header {
+    display: flex;
+    margin: 6.25vw 0;
+}
+
+.header-content {
+    width: 40vw;
+    padding: 40px;
+    text-align: center;
+}
+
+.header-content-h1 {
+    margin-bottom: 32px;
+}
+
+.header-content-img {
+    display: block;
+    margin: auto;
+}
+
+.header-content-button {
+    width: 100%;
+}
+
+.header-content-small {
+    color: var(--darkgray);
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.header-bg_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+}
+/* Header ====================================================================*/
+
+/* Section_1 ====================================================================*/
+.section_1 {
+    display: flex;
+    align-items: center;
+    margin: 12.5vw 0;
+    padding: 40px;
+}
+
+.section_1-figure {
+    position: relative;
+    margin-left: 6.25vh;
+}
+
+/* .section_1-figure-img_1 {
+
+} */
+
+.section_1-figure-img_2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.section_1-content {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+    margin-left: 12.5vh;
+}
+
+.section_1-content-h1 {
+    margin-bottom: 24px;
+    font-size: 3rem;
+}
+
+/* .section_1-content-p {
+    
+} */
+/* Section_1 ====================================================================*/
+
+/* Section_2 ====================================================================*/
+.section_2 {
+    display: flex;
+    align-items: center;
+    margin: 12.5vw 6.25vw;
+}
+
+.section_2-content {
+    padding-right: 6.75vw;
+}
+
+/* .section_2-content-p {
+
+} */
+
+.section_2-content-button {
+    display: inline-block;
+    min-width: 150px;
+}
+
+/* .section_2-img {
+
+} */
+/* Section_2 ====================================================================*/
+
+/* Section_3 ====================================================================*/ 
+.section_3 {
+    display: flex;
+    align-items: center;
+    margin-top: 12.5vw 6.25vw;
+    padding: 40px;
+}
+
+.section_3-img {
+    position: relative;
+    margin-left: 6.25vh;
+}
+
+.section_3-content {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+    margin-left: 12.5vh;
+}
+
+.section_3-content-h1 {
+    margin-bottom: 24px;
+    font-size: 3rem;
+}
+
+/* .section_3-content-p {
+    
+} */
+/* Section_3 ====================================================================*/
+
+/* Section_4 ====================================================================*/ 
+.section_4 {
+    text-align: center;
+    margin: 12.5vw 6.25vw;
+    padding: 40px;
+}
+
+.section_4-h1 {
+    font-size: 3rem;
+}
+
+.section_4-image_content {
+    display: flex;
+    justify-content: center;
+}
+
+.section_4-figure {
+    padding: 40px;
+}
+
+/* .section_4-figure-img {
+} */
+
+.section_4-figure-figcaption {
+    font-weight: 700;
+}
+
+/* Section_4 ====================================================================*/
+
+/* Footer ====================================================================*/
+.footer {
+    text-align: center;
+    margin: 12.5vw 6.25vw 0;
+    padding: 40px;
+}
+
+/* .footer-img {
+
+} */
+
+.footer-ul {
+    color: white;
+    font-size: 1.2rem;
+    font-family: Inter, sans-serif;
+    font-weight: 100;
+    margin: 40px 0;
+}
+
+.footer-ul-li {
+    display: inline-block;
+}
+
+.footer-ul-li>a {
+    color: white;
+    font-size: 1.2rem;
+    font-family: Inter, sans-serif;
+    font-weight: 100;
+    padding: 0 8px;
+    text-decoration: none;
+}
+
+/* .footer-aside {
+} */
+
+.footer-aside-p {
+    color: var(--darkgray);
+    font-size: 1rem;
+    margin: 40px 0;
+}
+/* Footer ====================================================================*/
