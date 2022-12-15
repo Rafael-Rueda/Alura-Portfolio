@@ -1,0 +1,112 @@
+@media screen and (min-width: 1024px) {
+
+div.header-div {
+    grid-template-columns: 0.4fr 1fr 1fr;
+    position: relative;
+}
+
+span.header-div-span_1 {
+    display: none;
+}
+span.header-div-span_middle {
+    display: flex;
+    margin-left: 16px;
+}
+span.header-div-span_middle>h1 {
+    display: block;
+    font-size: 1.4em;
+    margin-left: 8px;
+}
+
+a.header-div-span_2-a_1 {
+    display: none;
+}
+
+.header-div-span-a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: black;
+    margin-right: 16px;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.header-div-span_3 > ul {
+    display: flex;
+    text-transform: uppercase;
+    
+}
+
+.header-div-span_3 > ul > li {
+    padding: 24px 32px 24px 32px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: black;
+    margin-right: 16px;
+    
+}
+
+.header-div-span-input_2 {
+    display: none;
+}
+
+.header-div-span-input_2:checked ~ .li-lista{
+    display: block;
+}
+
+.header-div-span-input_2:checked ~ .li-categorias{
+    background: var(--darkbluegradient);
+    color: white;
+}
+
+.li-lista {
+    position: absolute;
+    top: calc(100% - 6px);
+    margin-left: -32px;
+    display: none;
+    background: white;
+}
+
+.li-lista>li {
+    padding: 16px;
+    color: var(--darkblue)
+}
+
+.li-lista>li:hover {
+    padding: 16px;
+    background: var(--darkbluegradient);
+    cursor: pointer;
+    color: white;
+}
+
+.header-div-span_3-label {
+    z-index: 1;
+}
+
+.header-div-span_3-a {
+    text-decoration: none;
+    color: black;
+}
+
+h1.header-aside-h1 {
+    font-size: 2em;
+}
+
+input.header-aside-form-input {
+    width: 600px;
+    height: 50px;
+}
+
+input.header-aside-form-input::placeholder {
+    background-position: auto;
+    font-size: 1.6em;
+    background-size: 30px;
+}
+
+}
