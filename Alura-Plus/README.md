@@ -7,4 +7,4 @@ Meu primeiro projeto HTML do portfolio. Aqui construí a homepage da Alura Plus,
 
 <h2 align="center">Preview: </h2>
 
-    [https://alura-plus-phi-two.vercel.app/](https://alura-plus-rafael-rueda.vercel.app/)
+    https://alura-plus-rafael-rueda.vercel.app/
