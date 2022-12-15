@@ -104,7 +104,7 @@ input.header-aside-form-input {
 }
 
 input.header-aside-form-input::placeholder {
-    background-position: auto;
+    background-position: 4em;
     font-size: 1.6em;
     background-size: 30px;
 }
