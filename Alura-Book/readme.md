@@ -7,4 +7,4 @@ Meu segundo projeto HTML do portfolio. Aqui construí a homepage da Alura Books,
 
 <h2 align="center">Preview: </h2>
 
-<code><a align: center; href="https://alura-book-rafael-rueda.vercel.app/">https://alura-book-rafael-rueda.vercel.app/</a></code>
+<code><a align= "center" href="https://alura-book-rafael-rueda.vercel.app/">https://alura-book-rafael-rueda.vercel.app/</a></code>
