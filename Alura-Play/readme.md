@@ -11,4 +11,4 @@ Meu terceiro projeto HTML do portfolio. Aqui construí a homepage da Alura Play,
 
 <h2 align="center">Preview: </h2>
 
-<code align= "center"><a href="https://alura-book-rafael-rueda.vercel.app/" target= "_blank">https://alura-book-rafael-rueda.vercel.app/</a></code>
+<code align= "center"><a href="https://alura-play-rafael-rueda.vercel.app/" target= "_blank">https://alura-play-rafael-rueda.vercel.app/</a></code>
