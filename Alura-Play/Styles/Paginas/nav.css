@@ -1,0 +1,34 @@
+nav {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--textc);
+    width: 100%;
+    height: 60px;
+}
+
+.nav__lista {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+    .nav__lista > li {
+        padding: 16px 40px 0px 24px;
+        width: 24px;
+        font-size: 1em;
+    }
+
+    .nav__lista > li > a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .nav__lista p {
+        color: white;
+        padding-top: 4px;
+        font-size: 0.9em;
+    }
