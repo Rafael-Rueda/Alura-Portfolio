@@ -13,6 +13,7 @@ main {
     width: 90vw;
     height: 70vw;
     padding: 25px;
+    flex-grow: 1;
 }
 
 .descricao-video {
