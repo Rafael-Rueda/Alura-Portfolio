@@ -6,7 +6,7 @@ nav {
 
 .nav__div1 {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 50%;
 }
 
@@ -16,7 +16,8 @@ nav {
 
     .div1__p {
         display: inline;
-        font-weight: 700;
+        font-weight: 500;
+        font-size: 18px;
         
     }
 
