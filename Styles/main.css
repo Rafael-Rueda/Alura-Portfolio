@@ -74,16 +74,18 @@ main  h2 {
 
 .video__container {
     display: grid;
-    width: 85vw;
+    width: 80vw;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(160px, max(
-        calc((100% / 4.5) - 12vw), calc((100% / 4.3))
-    )));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 16px;
     justify-content: start;
 }
 
-
+@media screen and (min-width: 1024px){
+    .video__container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
 
 /* SECÇÃO 2 -------------------------------------------- */
 
