@@ -13,7 +13,7 @@ if(video_width < 225) {
 }
 
 window.addEventListener('resize', function() {
-    document.querySelector('body').style.height = '100vh'
+    document.querySelector('body').style.height = '100%'
     video_width = Number(document.querySelector('.video').offsetWidth)
     if(video_width < 225) {
         for (c = 0 ; c < video_img2.length ; c++ ) {

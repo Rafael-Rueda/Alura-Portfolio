@@ -4,7 +4,7 @@
 @import url(footer.css);
 
 :root {
-    --bgcor: linear-gradient(180deg, #154580 0%, #041833 100%);
+    --bgcor: linear-gradient(to bottom, #154580 0%, #041833 100%);
     --bgnav:  #041833c0;
 }
 
@@ -13,8 +13,7 @@ h1,h2,h3,p,span,a,li,ul,button,div {
 }
 
 body {
-    background: var(--bgcor) no-repeat;
-    height: 100vh;
+    background-color: #154580;
 }
 
 .nav__main {
