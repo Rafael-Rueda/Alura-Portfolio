@@ -2,6 +2,7 @@
 
 @import url(nav.css);
 @import url(header.css);
+@import url(main.css);
 
 
 
@@ -11,7 +12,7 @@
     --lightgray: #98A2B3;
 }
 
-h1,h2,h3,p,span,a,li,ul,button,div {
+h1,h2,h3,p,span,a,li,ul,button,div,small{
     font-family: inter;
 }
 
