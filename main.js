@@ -3,6 +3,7 @@ let limitedevalor = 0
 const estatistica = document.querySelectorAll('.estatistica')
 let conjstat = []
 const estatistica_numero = document.querySelectorAll('.estatistica-numero')
+const estatistica_valor = document.querySelectorAll('.estatistica-valor')
 
 function estatisticasf() {
     for (c = 0; c < estatistica.length ; c++) {
@@ -25,11 +26,15 @@ function upgrade(upid) {
         } 
         
         else {
+            
             numid = 1;
         }
     }
     
     estatistica_numero[upid].innerHTML = (parseFloat(estatistica_numero[upid].firstChild.nodeValue) + (1 * Number(numid)))
+    estatistica_valor[upid].setAttribute('data-points', (parseFloat(estatistica_valor[upid].getAttribute('data-points')) + (1 * Number(numid))))
+    console.log(estatistica_numero[upid].getAttribute('data-points'))
+    
 }
 
 function degrade(degid) {
@@ -52,6 +57,8 @@ function degrade(degid) {
     }
 
     estatistica_numero[degid].innerHTML = (parseFloat(estatistica_numero[degid].firstChild.nodeValue) - 1 * Number(numid))
+    estatistica_valor[degid].setAttribute('data-points', (parseFloat(estatistica_valor[degid].getAttribute('data-points')) - (1 * Number(numid))))
+    console.log(estatistica_numero[degid].getAttribute('data-points'))
 }
 
 
