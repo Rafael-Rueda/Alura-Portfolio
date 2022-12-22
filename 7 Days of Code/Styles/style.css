@@ -3,6 +3,7 @@
 @import url(nav.css);
 @import url(header.css);
 @import url(main.css);
+@import url(footer.css);
 
 
 
@@ -12,7 +13,7 @@
     --lightgray: #98A2B3;
 }
 
-h1,h2,h3,p,span,a,li,ul,button,div,small{
+h1,h2,h3,p,span,a,li,ul,button,div,small,::placeholder{
     font-family: inter;
 }
 
@@ -20,6 +21,3 @@ a {
     text-decoration: none;
     color: black;
 }
-
-
-

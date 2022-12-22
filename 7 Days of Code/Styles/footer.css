@@ -1,0 +1,47 @@
+footer {
+    text-align: center;
+}
+
+h1 {
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 32px;
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 12px 14px 12px 16px;
+    width: 360px;
+    height: 24px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+button {
+    border: 1px solid #8E2424;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    background-color: var(--red);
+    color: white;
+    width: 116px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 16px;
+
+}
+
+p:nth-of-type(2) {
+    color: #667085;
+    font-size: 18px;
+}

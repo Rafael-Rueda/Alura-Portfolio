@@ -2,6 +2,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    white-space: nowrap;
 }
 
 small {
@@ -39,6 +40,11 @@ main > img {
         width: 80%;
         height: 200px;
     }
+}
+
+
+main h1 {
+    white-space: pre-wrap;
 }
 
 main > h2 {
@@ -82,4 +88,26 @@ main > ul > li td {
 
 main > ul > li td:nth-of-type(1) {
     white-space: nowrap;
+}
+
+.parte2 {
+    background: rgba(196, 25, 25, 0.03);
+    border-radius: 16px;
+    padding: 128px;
+    margin: 192px 128px;
+    text-align: center;
+}
+
+.parte2 small {
+    margin: 0 auto;
+}
+
+.parte2 img {
+    width: 4%;
+    margin: 48px 0 16px 0;
+}
+
+.parte2 p {
+    padding: 8px 0px;
+    color: #667085;
 }
