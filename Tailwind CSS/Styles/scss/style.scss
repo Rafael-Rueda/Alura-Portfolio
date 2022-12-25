@@ -1,0 +1,13 @@
+//Template criado por Rafael Rueda - "https://github.com/Rafael-Rueda"
+
+// Comando para linkar o scss com a página:
+// sass --watch scss/style.scss:css/style.css
+@import '../scss/nav.scss';
+@import '../scss/header.scss';
+@import '../scss/main.scss';
+@import '../scss/footer.scss';
+
+
+h1,h2,h3,p,span,a,li,ul,button,div {
+    font-family: sans-serif;   
+}
