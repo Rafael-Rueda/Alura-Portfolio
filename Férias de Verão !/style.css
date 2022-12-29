@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    background-color: #FFEAD4;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw
+}
+
+.caiaques_img {
+    width: 100%;
+}
+
+.lett-header {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    margin-top: 10%;
+    fill: transparent;
+    animation: verao 0.5s ease-in forwards;
+    animation-delay: 3.25s;
+}
+
+.lett-header path {
+    stroke: transparent;
+    stroke-width: 2px;
+    animation: borda 4s forwards ease-in-out;
+    stroke-dasharray: 0px;
+}
+
+@keyframes verao {
+    to {
+        fill: #BE253F;
+    }
+}
+
+@keyframes borda {
+    from {
+        stroke-dasharray: 100px;
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke: #BE253F;
+        stroke-dasharray: 1500px;
+        
+    }
+}
+
+.sec-titulo {
+    text-align: center;
+    font-size: 72px;
+}
+
+.card-esq, .card-dir {
+    width: 600px;
+    background-color: white;
+    padding: 16px;
+    height: 500px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card-esq > svg {
+    width: 200px;
+}
+
+.card-dir > svg {
+    width: 200px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card-esq {
+    margin-right: 50px;
+}
+
+.card-dir {
+    margin-left: 50px;
+}
+
+#Camada_1 {
+    width: 60%;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    fill: white;
+    animation: baixo_agua 2s infinite alternate;
+}
+
+.footer {
+    position: relative;
+}
+
+@keyframes baixo_agua {
+    0% {
+        filter: url("#squiggly-0")
+    }
+    25% {
+        filter: url("#squiggly-1");
+      }
+    50% {
+        filter: url("#squiggly-2");
+    }
+    75% {
+        filter: url("#squiggly-3");
+    }
+    100% {
+        filter: url("#squiggly-4");
+    }
+}
+
+#onda {
+    animation: mov_nuvem 1s infinite alternate;
+}
+
+ .cls-7, .cls-6 {
+    animation: mov_onda 0.5s infinite alternate;
+}
+
+#nuvem-1 {
+    animation: nuvem1 10s infinite alternate;
+}
+
+#nuvem-2 {
+    animation: nuvem2 10s infinite alternate;
+}
+
+@keyframes mov_nuvem {
+    to {
+        transform: translate(15px, 2px);
+    }
+}
+@keyframes mov_onda {
+    to {
+        transform: translate(0px, 15px);
+    }
+}
+
+@keyframes nuvem1 {
+    to {
+        transform: translate(-100px, 15px);
+    }
+}
+@keyframes nuvem2 {
+    to {
+        transform: translate(100px, 15px);
+    }
+}
