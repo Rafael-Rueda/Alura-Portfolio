@@ -92,6 +92,7 @@ a.header-div-span_2-a_1 {
 .header-div-span_3-a {
     text-decoration: none;
     color: black;
+    white-space: nowrap;
 }
 
 h1.header-aside-h1 {
