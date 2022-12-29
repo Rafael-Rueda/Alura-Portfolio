@@ -92,6 +92,7 @@ a.header-div-span_2-a_1 {
 .header-div-span_3-a {
     text-decoration: none;
     color: black;
+    white-space: nowrap;
 }
 
 h1.header-aside-h1 {
@@ -104,7 +105,7 @@ input.header-aside-form-input {
 }
 
 input.header-aside-form-input::placeholder {
-    background-position: 4em;
+    background-position: auto;
     font-size: 1.6em;
     background-size: 30px;
 }
