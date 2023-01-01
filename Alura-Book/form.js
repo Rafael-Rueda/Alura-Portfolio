@@ -1,18 +1,21 @@
 let _CEP = document.querySelector('#cep')
 
-_CEP.addEventListener('blur', e => {
+_CEP.addEventListener('blur', async function() {
+    try {
     _CEP$value = _CEP.value.replaceAll('-','');
-    const consultaCEP = fetch(`https://viacep.com.br/ws/${_CEP$value}/json/`)
-    .then(valor => valor.json()
-        .then(_data => preencherFormCEP(_data)))
-    .catch()
+    let consultaCEP = await fetch(`https://viacep.com.br/ws/${_CEP$value}/json/`);
+    consultaCEP = await consultaCEP.json();
+    preencherFormCEP(consultaCEP);
+    }
+    catch{
+        console.log('ERRO: Digite o CEP corretamente.')
+    }
 })
 
 function preencherFormCEP(d) {
-    for (const campo in d) {
-        if (document.querySelector('#'+campo)) {
-            console.log(document.querySelector('#'+campo));
-            document.querySelector('#'+campo).value = d[campo];
+        for (const campo in d) {
+            if (document.querySelector('#'+campo)) {
+                document.querySelector('#'+campo).value = d[campo];
+            }
         }
-    }
 }
