@@ -17,6 +17,43 @@
     .links__ul {
         display: flex;
         gap: 24px;
+        margin-bottom: 20px;
+    }
+
+    .links__enviarvideo:hover {
+        cursor: pointer;
+        background-color: darkgray;
+    }
+
+    .links__divinput {
+        width: 30%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0 8px;
+        align-items: top;
+    }
+        .links__input{
+            height: 30px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            text-align: left;
+            padding-left: 8px;
+            display: inline-block;
+            flex-grow: 1;
+        }
+        .links__input2 {
+            display: inline-block;
+            width: 20%;
+            height: 35px;
+        }
+        .links__input2:hover {
+            cursor: pointer;
+            background-color: darkgray;
+        }
+
+    .links__img {
+        margin-bottom: 20px;
     }
 
 .header__menu {
