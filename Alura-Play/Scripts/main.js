@@ -1,5 +1,10 @@
 async function listavideos() {
-    const conexao = await (await fetch("http://localhost:3000/videos")).json()
+    const conexao = await (await fetch("http://localhost:3000/videos", {
+        method: "GET",
+        headers: {
+            "Content-type": "application/json"
+        }
+    })).json()
     return conexao
 };
 

@@ -1,0 +1,12 @@
+{
+  "name": "js-objetos",
+  "version": "1.0.0",
+  "description": "Projeto do Bytebank para seus clientes",
+  "main": "Cliente.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael Rueda",
+  "license": "ISC",
+  "type": "module"
+}
