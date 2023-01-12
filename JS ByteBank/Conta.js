@@ -1,22 +1,26 @@
 import { contas } from "./funcoes.js";
-
-export class ContaCorrente{
+export class Conta{
     constructor (agencia, saldo, cliente) {
+        if (this.constructor == Conta) {
+            throw new Error('Você não deve instanciar um Objeto do tipo "Conta" (Classe abstrata)')
+        }
         this.agencia = agencia;
         this.saldo = saldo;
         this.cliente = cliente;
         this.sacar = function (valor) {
             if (this.saldo >= valor) {
                 this.saldo -= valor;
+                console.log(`Saque no valor de R$${valor} efetuado com sucesso.`)
             } else {
-                console.log('A conta não possui saldo suficiente para essa transação.')
+                console.log('[ERRO] A conta não possui saldo suficiente para essa transação.')
             }
         };
         this.depositar = function (valor) {
             if (valor > 0) {
                 this.saldo += valor;
+                console.log(`Depósito no valor de R$${valor} efetuado com sucesso.`)
             } else {
-                console.log('Digite um valor válido.')
+                console.log('[ERRO] Digite um valor válido.')
             }
         };
         this.transferir = function (valor, cpf) {
@@ -35,3 +39,5 @@ export class ContaCorrente{
         }
     }
 };
+
+
