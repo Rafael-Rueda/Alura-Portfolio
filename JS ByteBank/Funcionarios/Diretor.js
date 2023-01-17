@@ -7,6 +7,8 @@ export class Diretor extends Funcionario{
         this.aprovar = function() {
             if (this.logado == true) {
                 console.log('aprovado')
+            } else {
+                console.log('[ERRO] Você precisa estar logado para isso.')
             }
         };
     }
