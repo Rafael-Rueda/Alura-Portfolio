@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+main {
+    text-align: center;
+}
+
+main > section {
+    max-width: 900px;
+    margin: auto;
+    padding: 16px;
+}
+main img {
+    margin-top: 32px;
+    width: 100%;
+}
+
+main h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 110%;
+
+    text-align: left;
+    margin: 16px 0 16px 0;
+}
+
+main p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 110%;
+
+    color: #222222;
+    text-align: left;
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
+
+.cards > div {
+    display: inline-block;
+    margin: 16px;
+    position: relative;
+}
+
+.cards .card_img {
+    width: 250px;
+    height: 315px;
+}
+
+.cards > div p:first-child {
+
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+
+    border-radius: 4px;
+    background-color: white;
+    padding: 8px;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+}
+
+.cards > .card {
+    max-width: 250px;
+}
+
+.cards > div > div {
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+    margin-top: 8px;
+    
+}
+
+.cards > div > div > img {
+    width: 20px;
+    margin: 0;
+}
+
+.cards span {
+    color: #918E9B;
+}
+
+.cards strong {
+    font-weight: bold;
+}
+
+.cards > div:not(.card) > p {
+    width: 100%;
+}
