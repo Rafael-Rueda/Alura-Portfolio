@@ -1,0 +1,48 @@
+main {
+    margin-top: 32px;
+}
+
+main .form {
+    display: grid;
+    justify-content: center;
+    width: 50vw
+}
+main h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+main div.input {
+    margin: 8px;
+}
+
+main label {
+    display: block;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 4px;
+}
+
+main input {
+    width: 40vw;
+    height: 50px;
+}
+
+main select {
+    height: 50px;
+    width: 20vw;
+}
+
+main button {
+    margin-top: 16px;
+    background: #6278F7;
+    mix-blend-mode: normal;
+    border-radius: 10px;
+    border:none;
+    height: 50px;
+    color: White;
+}
+
+main button:hover {
+    cursor: pointer;
+}

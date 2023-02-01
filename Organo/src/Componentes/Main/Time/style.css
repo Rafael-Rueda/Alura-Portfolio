@@ -1,0 +1,23 @@
+.frontend, .uxdesign, .programação {
+    display: grid;
+    justify-content: center;
+}
+
+.cards_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards_section > h1 {
+    justify-self: center;    
+}
+
+.cards_container h3 {
+    justify-self: center;
+    font-size: 24px;
+}
+
+.cards_container p {
+    justify-self: center;
+    font-family: sans-serif;
+}
