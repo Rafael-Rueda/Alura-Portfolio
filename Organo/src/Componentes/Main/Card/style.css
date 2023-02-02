@@ -7,6 +7,8 @@
     margin-left: 32px;
     padding: 16px;
     border-radius: 10px 10px 0px 0px;
+    position: relative;
+    gap: 16px 0;
     
 }
 .card img{
@@ -14,7 +16,7 @@
     border-radius: 100%;
 }
 
-.frontend .card {
+/* .frontend .card {
     background: linear-gradient(to bottom, #82CFFA 0, #82CFFA 90px, white 90px, white 100%);
 }
 .uxdesign .card {
@@ -23,4 +25,14 @@
 .programação .card {
     
     background: linear-gradient(to bottom, #57C278 0, #57C278 90px, white 90px, white 100%);
+} */
+
+.deletar_card {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.deletar_card:hover {
+    cursor:pointer;
 }

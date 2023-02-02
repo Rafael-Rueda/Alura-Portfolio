@@ -67,7 +67,7 @@ export function Input(props) {
 
             : 
             <input onChange={(e) => salvar(e)}
-            id={props.name} name={props.name} type={tipo} placeholder={props.value}/>}
+            id={props.name} pattern={props.type == 'image' ? '^https://[\w]*' : ''} name={props.name} type={tipo} placeholder={props.value}/>}
         </div>
     )
 }

@@ -1,5 +1,7 @@
 main {
     margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 main .form {
@@ -41,8 +43,13 @@ main button {
     border:none;
     height: 50px;
     color: White;
+    width: 200px;
 }
 
 main button:hover {
     cursor: pointer;
+}
+
+.colaboradores {
+    grid-column: span 2;
 }
