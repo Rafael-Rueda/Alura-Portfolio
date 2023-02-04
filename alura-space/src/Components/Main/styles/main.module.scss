@@ -1,0 +1,90 @@
+.main {
+    grid-area: main;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.h1 {
+    background: linear-gradient(to right, #b45ec8 0, #8853ce 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 30px;
+}
+
+.filtro {
+    display: flex;
+    justify-content: space-between;
+    p {
+        color: white;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 0 16px;
+        li {
+            color: white;
+            background: linear-gradient(to right, #b45ec85b 0, #8853ce65 100%);
+            padding: 4px 8px;
+            border-radius: 16px;
+            &:hover {
+                cursor:pointer;
+            }
+        }
+    }
+}
+
+.populares {
+    grid-area: popular;
+    display: grid;
+    margin-top: 32px;
+    gap: 36px 0px;
+    grid-template-rows: 100px auto;
+}
+
+.populares {
+    h1 {
+        text-align: center;
+        background: linear-gradient(to right, #b45ec8 0, #8853ce 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+
+
+@media screen and (max-width: 1154px) {
+    .main {
+        grid-column: 1 / 4;
+    }
+    .filtro {
+        display: grid;
+        ul {
+            display: grid;
+            margin-top: -12px;
+            gap: 8px 0;
+
+            display: none;
+        }
+        p {
+            margin-left: 0;
+        }
+    }
+
+    .h1 {
+        margin-left: 0;
+    }
+
+    .populares {
+        grid-area: extra;
+        h1 {
+            text-align: left;
+        }
+    }
+}

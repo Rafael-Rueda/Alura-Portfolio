@@ -1,0 +1,87 @@
+.card {
+    p {
+        color: white;
+        margin: 2px;
+    }
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 4px;
+    text-align: center;
+    img {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.expansoes {
+    display: none;
+    z-index: 4;
+
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    img {
+        width: 100%;
+    }
+    .fechar {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+
+        color: white;
+        font-weight: bold;
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: rgb(252, 122, 122);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .download {
+        position: absolute;
+        right: 40px;
+        top: -10px;
+
+        color: white;
+        font-weight: bold;
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: rgb(184, 255, 154);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.exibir {
+    display: block !important;
+}
+
+.popular {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
