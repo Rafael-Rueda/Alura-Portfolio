@@ -1,0 +1,72 @@
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    gap: 0 8px;
+}
+
+.input_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    $border: 3px;
+
+    box-sizing: border-box;
+    border-radius: 12px;
+    position: relative;
+
+    background-color: transparent;
+    background-clip: padding-box;
+    
+    border: $border solid transparent;
+
+    &:before {
+        content: '';
+        background: linear-gradient(to right, #b45ec8 0, #8853ce 100%);
+        border-radius: inherit;
+        margin: -$border;
+        position: absolute;
+        top: 0; right: 0; left: 0; bottom: 0;
+        z-index: -1;
+
+        border: $border solid transparent;
+
+        -webkit-mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    img {
+        margin-right: 2%;
+    }
+}
+
+.input {
+    height: 30px;
+    width: 40vw;
+    
+    outline: none;
+    border-radius: 16px;
+    background: transparent;
+    border:none;
+    color: white;
+
+    font-size: 16px;
+    text-indent: 16px;
+
+    &::placeholder {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 1154px) {
+    .logo > img {
+        width: 150px;
+    }
+}

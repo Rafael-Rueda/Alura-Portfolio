@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'GandhiSans';
+    src: url(../fonts/gandhi-sans/GandhiSans-Regular.otf);
+}
+
+body {
+    background-image: linear-gradient(to bottom, #111111 0, #113A6C 100%);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    font-family: 'GandhiSans';
+    font-size: 20px;
+    margin: 16px;
+}
+
+#root {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav banner banner"
+    "nav main popular"
+    "extra extra extra";
+    grid-template-columns: auto 3fr 1fr;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #113A6C;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.511);
+    top: 0; right: 0; left: 0; bottom: 0;
+    z-index: 3;
+    display: none;
+}

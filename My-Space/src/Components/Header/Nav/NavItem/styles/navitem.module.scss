@@ -1,0 +1,40 @@
+.item {
+    color: white;
+    font-weight: bolder;
+
+    $underline: 4px;
+    box-sizing: border-box;
+    border-bottom: $underline solid transparent;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0 8px;
+
+    position: relative;
+
+    p {
+        &.selected {
+            background: linear-gradient(to right, #b45ec8 0, #8853ce 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+    }
+    &:hover {
+        cursor: pointer;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            background: linear-gradient(to right, #b45ec8 0, #8853ce 100%);
+            border-bottom: $underline solid transparent;
+
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+    }
+
+}
