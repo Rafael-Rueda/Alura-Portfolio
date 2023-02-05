@@ -36,6 +36,9 @@ export function Card(props) {
 
               <img alt={"Imagem de um astro"} src={card.img} className={styles.expandido} />
             </div>
+
+
+            
             {props.popular ? 
             <div onClick={(e) => expandir(e.target)} className={styles.card  + styles.popular} >
                 <img data-tipo={card.tipo} alt={"Imagem de um astro"} src={card.img} />

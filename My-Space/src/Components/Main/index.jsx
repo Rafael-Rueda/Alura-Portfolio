@@ -7,7 +7,7 @@ export function Main() {
     const [cards, setCards] = useState([]);
 
     async function fetchapi() {
-        const $cards = await ((await fetch("https://my-space-restapi.netlify.app/my-space.json")).json())
+        const $cards = await ((await fetch("https://rafael-rueda.github.io/testerestapi/my-space.json")).json())
         return $cards
     }
 
