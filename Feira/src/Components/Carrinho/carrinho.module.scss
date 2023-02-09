@@ -1,0 +1,19 @@
+.grid {
+    display: grid;
+    gap: 8px;
+    margin: auto;
+    width: 55%;
+    ul {
+        li {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: flex-start;
+            button {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    
+}
