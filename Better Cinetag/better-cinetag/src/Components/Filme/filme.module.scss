@@ -1,0 +1,13 @@
+.video {
+    grid-area: main;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+
+    margin-top: 50px;
+    iframe {
+        width: 80%;
+        height: 80vh;
+    }
+}

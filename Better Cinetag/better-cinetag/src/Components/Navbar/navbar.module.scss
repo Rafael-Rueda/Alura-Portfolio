@@ -1,0 +1,94 @@
+$cortexto: white;
+
+nav {
+
+    position: fixed;
+    font-size: 24px;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr;
+
+    z-index: 3;
+    width: 350px;
+    height: 100vh;
+
+    transition: transform .5s;
+    transform: translate(-80%, 0);
+
+    color: $cortexto;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.7) 270px, rgba(60, 60, 60, 0.7) 270px, rgba(60, 60, 60, 0.7) 100%);
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 16px;
+
+        .button {
+            width: 45px;
+            height: 45px;
+            background-color: gray;
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &>div {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+
+                div {
+                    width: 30px;
+                    height: 5px;
+
+                    transition: transform .5s, width .5s;
+
+                    background-color: $cortexto;
+                }
+            }
+
+            &>div:nth-of-type(2) {
+                width: 45px;
+                height: 45px;
+
+                position: absolute;
+                background-color: transparent;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(170, 170, 170);
+                transition: background-color .5s;
+            }
+        }
+
+        h1 {
+            margin: 16px;
+            font-size: 20px;
+        }
+    }
+
+    .main {
+        padding-top: 16px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            li {
+                margin: 0px 16px 32px 16px;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+                & > a {color: white;}
+                & > a:visited {color: White;}
+            }
+        }
+    }
+}
