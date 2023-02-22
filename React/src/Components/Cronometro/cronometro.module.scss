@@ -1,0 +1,20 @@
+.span {
+    font-size: 72px;
+    background-color: rgb(102, 117, 140);
+    margin: 2px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.p {
+    display: flex;
+    justify-content: center;
+    div {
+        background-color: white;
+        padding: 8px;
+        
+        display: flex;
+        align-items: center;
+    }
+}
