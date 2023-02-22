@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-template-rows: auto;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    align-content: start;
+    
+    height: auto;
+    min-height: 100vh;
+
+    background-color: black;
+}
