@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+body {
+    background-color: #f6f6f6;
+    font-family: 'Italiana', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}

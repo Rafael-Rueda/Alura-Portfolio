@@ -1,0 +1,27 @@
+@import '../../Styles/variaveis.scss';
+
+.menu {
+    padding: 20px $padding-horizontal;
+}
+
+.header {
+    background-image: url('../../assets/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+
+    padding: 20px $padding-horizontal;
+
+    display: flex;
+    align-items: center;
+    &__text {
+        color: white;
+        font-size: 5rem;
+        min-width: 400px;
+        width: 40%;
+    }
+}
+
+.cardapio {
+    padding: 20px $padding-horizontal;
+}

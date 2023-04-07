@@ -2,7 +2,7 @@ import styles from './card.module.scss'
 import {AiOutlineArrowLeft} from 'react-icons/ai'
 import { Favorito, FavoritoContext } from '../../../Common/Favorito';
 import { Link } from 'react-router-dom';
-import { useContext, useEffect, useRef, useState } from 'react';
+import { memo, useContext, useEffect, useRef, useState } from 'react';
 
 export function Card({id, img, titulo, descricao, sinopse}) {
 
