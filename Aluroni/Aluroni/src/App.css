@@ -4,6 +4,13 @@ body {
     background-color: #f6f6f6;
     font-family: 'Italiana', sans-serif;
 }
+
 * {
     box-sizing: border-box;
+}
+
+#root>main.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }

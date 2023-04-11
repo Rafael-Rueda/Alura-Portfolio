@@ -1,11 +1,11 @@
-import './App.css'
-import Cardapio from './Components/Cardapio'
+import {AppRouter} from './routes';
+import './App.css';
 
 function App() {
 
   return (
-    <Cardapio />
-  )
+    <AppRouter/>
+  );
 }
 
-export default App
+export default App;

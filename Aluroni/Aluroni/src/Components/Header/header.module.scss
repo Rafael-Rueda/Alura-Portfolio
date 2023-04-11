@@ -1,0 +1,23 @@
+@import '../../Styles/variaveis.scss';
+
+.header {
+    background-image: url('../../assets/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+
+    padding: 20px $padding-horizontal;
+
+    display: flex;
+    align-items: center;
+    &__text {
+        color: white;
+        font-size: 5rem;
+        min-width: 400px;
+        width: 40%;
+        margin: 0;
+        p {
+            margin: 0;
+        }
+    }
+}
