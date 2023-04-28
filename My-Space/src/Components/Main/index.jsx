@@ -13,6 +13,7 @@ export function Main() {
 
     useEffect(() => {
         fetchapi().then(data => setCards(Object.values(data.Cards)))
+        console.log(cards)
     }, [])
 
     const [cards_display, setCDisplay] = useState([]) 
